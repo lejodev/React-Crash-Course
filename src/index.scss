@@ -1,0 +1,73 @@
+.App {
+  top: 500px;
+  margin: auto;
+  width: 30%;
+  height: fit-content;
+  border: 2px solid #000000;
+  border-radius: 1rem;
+  padding: 0.6rem;
+  box-sizing: border-box;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .button {
+      background-color: #0dc516;
+      width: fit-content;
+      padding: 0.3rem;
+      cursor: pointer;
+    }
+  }
+
+  .container {
+    .task_form {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+      .form_control {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0.3rem 0 0.3rem 0;
+        font-size: large;
+        input[type="text"] {
+          padding: 0.4rem;
+        }
+      }
+      .button {
+        background-color: #000000;
+        color: white;
+        font-size: medium;
+        padding: 0.4rem;
+      }
+    }
+    .task {
+      // background-color: #0dbfc5;
+      border: 2px solid black;
+      border-radius: 0.2rem;
+      margin: 1rem 0 1rem 0;
+      padding: 0.3rem;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h3 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .delete_icon {
+          color: black;
+        }
+      }
+      h3,
+      p {
+        margin: 0;
+      }
+    }
+    .reminder {
+      border-left: 0.5rem solid rgb(92, 246, 2);
+    }
+  }
+}
